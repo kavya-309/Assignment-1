@@ -154,56 +154,17 @@ Let us assume that:
 %
 Then
 \begin{align}
-\label{eq:c_tricoord}
 AB &= \norm{\vec{B}-\vec{A}}^2 = \norm{\vec{B}}^2  = c^2 \quad \because \vec{A} = \vec{0}
 \\
 \label{eq:a_tricoord}
 BC &= \norm{\vec{B}-\vec{C}}^2  = a^2
 \\
 AC &= \norm{\vec{C}-\vec{A}}^2 =  \norm{\vec{C}}^2 =  b^2
-\label{eq:b_tricoord}
-\end{align}
-%
-From \eqref{eq:a_tricoord},
-\begin{align}
-a^2 &=\norm{\vec{B}-\vec{C}}^2 = \norm{\vec{B}-\vec{C}}^T\norm{\vec{B}-\vec{C}}  
-\\
-&= \vec{B}^T\vec{B}+\vec{C}^T\vec{C}-\vec{B}^T\vec{C} - \vec{C}^T\vec{B} 
-\\
-&= \norm{\vec{B}}^2 + \norm{\vec{C}}^2 - 2\vec{B}^T\vec{C} \quad \brak{\because \vec{B}^T\vec{C} = \vec{C}^T\vec{B} } 
-\label{eq:tri_const_norm_ac}
-\\
-&= b^2+c^2-2bp
-\end{align}
-%
-yielding
-\begin{align}
-p&= \frac{b^2+c^2-a^2}{2.b}
-\\
-p&= \frac{6^2+(4.5)^2-5^2}{2.6}
-\\
-p&= \frac{36+20.25-25}{12}
-\\
-p&= 2.60416667
-\\
-\end{align}
-%
-From \eqref{eq:b_tricoord}, 
-\begin{align}
-\norm{\vec{C}}^2 &=b^2 = p^2+q^2
-\\
-\implies q&= \pm \sqrt{b^2-p^2}
-\\
-q&= \pm \sqrt{6^2-2.60416667^2}
-\\
-q&= \pm \sqrt{29.218316}
-\\
-q&= 5.40539693
 \end{align}
 
-The vertex A can be expressed in polar coordinate form as 
+The vertex C can be expressed in polar coordinate form as 
 \begin {align}
-\vec{A} = b\myvec{\cos \theta\\ \sin \theta}
+\vec{C} = b\myvec{\cos A\\ \sin A}
 \end{align}
 From $\triangle ABC$,we use the law of cosines:
 \begin{align}
@@ -222,32 +183,23 @@ cos A = 0.578703704
 
 We know that,
 \begin{align}
-sin^2 A + cos^2 A = 1
-\\
 sin A = \sqrt{1-cos^2 A}
 \\
 sin A = \sqrt{1-(0.578703704)^2}
 \\
 sin A = 0.665102023
 \end{align}
-Where
-\begin{align}
-\\
-b = \sqrt{a^2+c^2} = \sqrt{45.25}
-\\
-b = 6.72681202
-\end{align}
 
-A can be expressed as 
+C can be expressed as 
 \begin{align}
-\vec{A} = b\myvec{\ cos A \\ \ sin A}
+\vec{C} = b\myvec{\ cos A \\ \ sin A}
 \\
-\vec{A} = \myvec{\ 3.89283103 \\ \ 4.47401628}
+\vec{C} = \myvec{\ 3.47222222 \\ \ 3.99061214}
 \end{align}
 \end{align}
 Now, Vertices of given $\triangle ABC$ can be written as,
 \begin{align}
-\vec{C} = \myvec{p\\q}=\myvec{2.60416667\\5.40539693}, \vec{A} = \myvec{3.89283103\\4.47401628}, \vec{B} =\myvec{c\\0} = \myvec{5\\0}
+\vec{C} = \myvec{p\\q}=\myvec{3.47222222\\3.99061214}, \vec{A} = \myvec{0\\0}, \vec{B} =\myvec{c\\0} = \myvec{4.5\\0}
 \end{align}
 \\
  Now, $\triangle ABC$ can be plotted using vertices $AB$ ,$BC$ and $CA$ .
